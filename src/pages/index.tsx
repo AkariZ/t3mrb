@@ -1,39 +1,61 @@
 import React from "react";
-
 import Link from "next/link";
-import Clock from "../components/clock"
-
+import Image from "next/image";
 
 const PageHome = () => {
   return (
-   
-      <><header className='bg-green-700  text-center text-white text-3xl p-'>
-      <h1>Meeting Room</h1>
-      <Clock />
-    </header><body className="items-center bg-white justify-items-center pt-2 min-h-screen ">
-        <div className="row">
-          <br />
-          <div className="color-green-300 text-center text-2xl ">Available</div>
-          <br />
-          <div className="color-black text-left ml-10 pt-3">
-            <h2>Welcome Partner</h2>
-            <h1 style={{ color: "Green" }}>02.00 - 03.00 PM</h1>
-            <h2>by Admin</h2>
-          </div>
-          <div className="text-center cursor-pointer">
-            <Link href="/form">
-              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
-                Book
-              </button>
-            </Link>
+    
+    <div className="font-serif bg-stone-700 bg-cover p-10 ">
+      <header className='text-center text-white text-7xl mt-2 '>
+        <h1>Meeting <br /> Booking Rooms</h1>
+      </header>
+      <body>
+        <div className="container mx-auto">
+          <div className="rows justify-center mt-20 pl-5 pr-5 flex ">
+            <div className="grid grid-cols-2 gap-x-20 gap-y-20 items-center ">
+
+              <div className="bg-white rounded-lg shadow-lg max-w-sm transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+                <Link href="/Building1/b1f1" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <Image src={'/1.jpg'} alt='Home Page' width={300} height={300} />
+                </Link>
+                <div className="p-2">
+                  <h5 className="text-gray-900 text-xl font-medium mb-2 text-center">Building 1</h5>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg max-w-sm transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+                <Link href="/Building1/b1f1" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <Image src={'/1.jpg'} alt='Home Page' width={300} height={300} />
+                </Link>
+                <div className="p-2">
+                  <h5 className="text-gray-900 text-xl font-medium mb-2 text-center">Building 2</h5>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg max-w-sm transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+                <Link href="/Building1/b1f1" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <Image src={'/1.jpg'} alt='Home Page' width={300} height={300} />
+                </Link>
+                <div className="p-2">
+                  <h5 className="text-gray-900 text-xl font-medium mb-2 text-center">Building 3</h5>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg max-w-sm transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+                <Link href="/Building1/b1f1" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <Image src={'/1.jpg'} alt='Home Page' width={300} height={300} />
+                </Link>
+                <div className="p-2">
+                  <h5 className="text-gray-900 text-xl font-medium mb-2 text-center">Building 4</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <br />
-      </body><footer className="text-xl bg-green-700 bg-cover p-10 text-center text-white">
-        Design Dolly Solution co,td
-      </footer></>
- 
+      </body >/
+      
+
+    </div >
   );
 }
-
 export default PageHome;
